@@ -1,42 +1,47 @@
-
-# Retail-Sales-SQL-Analysis
-Retail sales SQL analysis and business question practice using SQL Server.
 # Retail Sales SQL Analysis
 
-## Project Overview
-This project analyzes retail sales data using SQL Server.
+## About the Project
 
-## Database
-The project uses a retail database containing:
-- Customers
-- Products
+This is a SQL Server project based on a retail sales dataset.
+
+I used SQL to explore the sales data and answer different business
+questions related to customers, products, stores, sales, revenue,
+profit and delivery time.
+
+The main purpose of this project was to get practical experience in
+writing SQL queries and solving business problems using data.
+
+## Tools Used
+
+- SQL Server
+- SQL Server Management Studio (SSMS)
+- GitHub
+
+## Database Tables
+
+The project contains the following tables:
+
 - Sales
-- Stores
-- Exchange Rates
-
-## SQL Skills Used
-- SELECT, WHERE
-- GROUP BY and HAVING
-- JOINs
-- Subqueries
-- CTEs
-- CASE statements
-- Aggregate functions
-- Window functions
-- RANK() and ROW_NUMBER()
-- LAG()
-- Date functions
-
-## Project Questions
-The project contains business-oriented SQL questions related to:
-- Sales and revenue
 - Customers
 - Products
 - Stores
-- Profit
-- Monthly sales trends
-- Customer contribution
-- Top-performing products and categories
+- Exchange_Rates
+- Data_Dictionary
 
-## Note
-This repository currently contains SQL practice and analysis work. Queries will be reviewed and improved as part of the final portfolio version.
+The `Sales` table is the main transaction table and is connected with
+the customer, product, store and exchange rate tables.
+
+## Table Relationships
+
+```text
+Sales
+ |
+ |-- CustomerKey ------ Customers
+ |
+ |-- ProductKey ------- Products
+ |
+ |-- StoreKey ---------- Stores
+ |
+ |-- Currency_Code ----- Exchange_Rates
+ |
+ |-- Order_Date -------- Exchange_Rates
