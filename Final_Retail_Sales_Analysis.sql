@@ -526,7 +526,7 @@ GO
 
 
 /* =========================================================
-   Q46 - Month-over-month revenue growth
+    - Month-over-month revenue growth
    ========================================================= */
 -- Q46
 WITH MonthlyRevenue AS
